@@ -1,0 +1,169 @@
+body{
+    background-image: url("../img/bs2.jpg");
+    background-size: cover;
+    font-family: Verdana;
+}
+
+/*-----------------------------------MENU--------------------------------------------------*/
+.head_menu{
+    background: #f0b7a1; /* Old browsers */
+    background: -moz-linear-gradient(top, #f0b7a1 0%, #8c3310 50%, #752201 51%, #bf6e4e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f0b7a1 0%,#8c3310 50%,#752201 51%,#bf6e4e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f0b7a1 0%,#8c3310 50%,#752201 51%,#bf6e4e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=0 ); /* IE6-9 */
+
+    margin-top: 25px; /*сделаем отступ сверху в 25пх*/
+    width: 100%; /*ширина 100%*/
+
+    border-radius: 10px;
+}
+ul.head_ul{
+    display: flex; /*выстраиваем списки горизонтально*/
+    justify-content: center;
+}
+li.head_li{
+    list-style: none; /*убираем маркеры у списков li*/
+    padding: 10px; /*делаем отступы*/
+    border-right: 1px solid #b2b3b5; /*делаем прямые линин между кнопками*/
+}
+li.head_li a{
+    text-decoration: none; /*убираем подчеркивание*/
+    font-size: 18px;
+    color: #ffffff;
+    padding: 7px 30px 7px 40px;
+}
+li.head_li a i{
+    margin-right: 10px; /*сдвигаем иконку правее*/
+}
+.head_menu > ul li:first-child{
+    border-left: 1px solid #b2b3b5; /*Делаем прямые линии слева от кнопки дом*/
+}
+.head_menu > ul li:last-child{
+    border-right: 1px solid #b2b3b5; /*Делаем прямые линии справа от кнопки help*/
+}
+.head_menu li a:hover{
+    /*background: #b32d00;*/
+    background: white;
+    color: #B33C00;
+    box-shadow: 10px 5px 10px -5px black;
+    border-radius: 10px;
+}
+
+/*---------------------------------SHIP MENU--------------------------------------*/
+.ship_menu{
+    width: 1200px;
+    height: 60px;
+    margin: 0 0 20px 60px;
+    background:  rgba(179, 60, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 6px 3px #454547;
+    justify-content: center;
+    display: flex;
+}
+.fa-ship{
+    margin: 10px 0 10px 50px;
+    color: #E6E6E6;
+}
+.fa-ship:hover{
+    box-shadow: 0 0 6px 3px #454547;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#p1:after{
+    content: 'x1';
+    color: #E6E6E6;
+    font-family: Verdana;
+    padding-left: 5px; /*сдвигаем текст влево*/
+}
+#p2:after{
+    content: 'x2';
+    color: #E6E6E6;
+    font-family: Verdana;
+    padding-left: 5px; /*сдвигаем текст влево*/
+}
+#p3:after{
+    content: 'x3';
+    color: #E6E6E6;
+    font-family: Verdana;
+    padding-left: 5px; /*сдвигаем текст влево*/
+}
+#p4:after{
+    content: 'x4';
+    color: #E6E6E6;
+    font-family: Verdana;
+    padding-left: 5px; /*сдвигаем текст влево*/
+}
+/*-----------------------------BATTLE AREA---------------------------------------*/
+.area{
+    white-space:nowrap;
+}
+.area_one{
+    width: 550px;
+    height: 450px;
+    margin: 0 0 0 60px;
+    background: rgba(179, 60, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 6px 3px #454547;
+    display:inline-block
+
+}
+.area_two{
+    width: 550px;
+    height: 450px;
+    margin: 0 0 0 90px;
+    background: rgba(179, 60, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 6px 3px #454547;
+    display:inline-block;
+}
+#table_one{
+    border: 1px;
+    height: 400px;
+    width: 400px;
+    margin: 0 0 0 40px;
+
+}
+#table_two{
+    border: 1px;
+    height: 400px;
+    width: 400px;
+    margin: 0 0 0 40px;
+}
+#table_one > tbody > tr > td {
+     width: 600px;
+     height: 0;
+     background: rgba(230, 230, 230, 0.8);
+ }
+#table_one > thead > tr > td > p,
+#table_one > tbody > tr > td > p {
+    font-size: 11px;
+    color: #e6e6e6;
+    text-align: center;
+}
+#table_one > tbody > tr > td:nth-child(1) {
+    background: none;
+}
+
+#table_two > tbody > tr > td {
+    width: 600px;
+    height: 0;
+    background: rgba(230, 230, 230, 0.8);
+}
+#table_two > thead > tr > td > p,
+#table_two > tbody > tr > td > p {
+    font-size: 11px;
+    color: #e6e6e6;
+    text-align: center;
+}
+#table_two > tbody > tr > td:nth-child(1) {
+    background: none;
+}
+
+#table_one > tbody > tr > td:not(:nth-child(1)):hover{
+    background: rgba(191, 191, 191, 0.8);
+    cursor: pointer;
+}
+#table_two > tbody > tr > td:not(:nth-child(1)):hover{
+    background: rgba(191, 191, 191, 0.8);
+    cursor: pointer;
+}
